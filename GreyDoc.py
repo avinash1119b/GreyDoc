@@ -32,7 +32,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('./Models/diabetes_model.sav', 'rb'))
+ddiabetes_model = pickle.load(open('./Models/diabetes_model.sav', 'rb'))
 
 heart_disease_model = pickle.load(open('./Models/heart_disease_model.sav', 'rb'))
 
