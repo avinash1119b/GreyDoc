@@ -32,15 +32,15 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Mine/Deploy/Models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('./Models/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Mine/Deploy/Models/heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('./Models/heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('C:/Mine/Deploy/Models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('./Models/parkinsons_model.sav', 'rb'))
 
-kidney_model = pickle.load(open('C:/Mine/Deploy/Models/kidney_model.sav', 'rb'))
+kidney_model = pickle.load(open('./Models/kidney_model.sav', 'rb'))
 
-model_path = 'C:/Mine/Deploy/Models/Tumor.h5'
+model_path = './Models/Tumor.h5'
 Brain_model = load_model(model_path)
 
 
@@ -50,7 +50,7 @@ custom_objects = {
 }
 
 # Load the model without compiling (bypasses optimizer issue)
-Blood_model = load_model("C:/Mine/Deploy/Models/Blood_Cancer.h5", compile=False)
+Blood_model = load_model("./Models/Blood_Cancer.h5", compile=False)
 
 # sidebar for navigation
 with st.sidebar:
